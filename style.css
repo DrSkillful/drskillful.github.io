@@ -1,0 +1,453 @@
+:root {
+    --color-main: #00FF73;
+    --color-white: #ffffff;
+    --color-black: #312161;
+    --color-black-1: #251849;}
+
+    @font-face {
+    font-family: Xanmono;
+    src: url("./fonts/Xanmono-Regular.woff2") format("woff"), url("./fonts/Xanmono-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: XanmonoItalic;
+    src: url("./fonts/Xanmono-Italic.woff2") format("woff"), url("./fonts/Xanmono-Italic.otf") format("opentype");
+}
+
+@media (min-width:756px) {
+    
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes myAnimation {
+    from {opacity: 0; position: absolute; top:200px}
+    to {opacity: 100; position: absolute; top: 60%; left: 50%;}
+}
+
+@keyframes dropBox1 {
+    from {opacity: 0; position: absolute; top:200px}
+    to {opacity: 100; position: absolute; top: 60%; left: 40%;}
+}
+
+@keyframes dropBox2 {
+    from {opacity: 0; position: absolute; top:200px}
+    to {opacity: 100; position: absolute; top: 60%; left:15%;}
+}
+
+@keyframes pfp {
+    from {position: absolute; left:3000px}
+    to {position: absolute; top: 55%; left:75%;}
+}
+
+/*DESKTOP, DO NOT CHANGE*/
+    
+.menu_bar {
+    padding: 0 1%;
+    background-color: var(--color-black);
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;}
+
+.logo {
+    color: var(--color-white);
+    font-size: 20px;}
+
+.menu_bar ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 5px;
+    font-family: XanmonoItalic;}
+
+.menu_bar ul li {
+    position: relative;
+    padding: 10px 30px;}
+
+.menu_bar ul li:hover .drop ul {
+    display: block;
+    margin: 15px;}
+
+.drop ul li {
+    padding: 10px;
+    width: 80px;
+    font-size: 10px;
+    }
+
+.main {
+    font-size: 30px;
+    color: var(--color-black-1);
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: myAnimation;
+    animation-duration: 4s;
+
+.extra {
+    font-size: 15px;
+    }
+}
+
+
+.pfp{
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    animation-name: pfp;
+    animation-duration: 4s;
+    height: 50px;
+    width: 50px;
+    }
+
+.block2 {
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    animation-name: dropBox2;
+    animation-duration: 4s;
+
+.p2 {
+    display: flex;
+    position: absolute;
+    top: 43%;
+    text-align: center;
+    color: var(--color-white);}
+    }
+
+.drop {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+.block1{
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    animation-name: dropBox1;
+    animation-duration: 3s;
+}
+
+.block1 ul {
+    position: absolute;
+    top:25%;
+    left:25%;
+    color: var(--color-white);
+    font-size: 20px;
+    word-spacing: 10%;}
+
+.block1 p {
+    display: flex;
+    position: absolute;
+    top:10%;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.block2 p {
+    display: flex;
+    position: absolute;
+    top:10%;
+    text-align: center;
+    color: var(--color-white);
+}
+
+body {
+    font-family: Xanmono;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.logo a:hover {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.logo span {
+    color: var(--color-main);
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li a:hover {
+    color: var(--color-main);
+    transition: all 0.25s;
+}
+
+.drop ul {
+    display: none;
+}
+
+.menu_bar {
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+
+.background {
+    height: calc(100vh);
+    background-image:linear-gradient(90deg,rgba(189, 145, 255, 0.59) 0%, rgba(0, 255, 115, 0.49) 100%), url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+footer {
+    display: flex;
+    background-color: var(--color-black);
+    padding: 0 20px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+footer p {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+footer a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+    
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes myAnimation {
+    from {opacity: 0; position: absolute; top:200px}
+    to {opacity: 100; position: absolute; top: 60%; left: 50%;}
+}
+
+@keyframes dropBox1 {
+    from {opacity: 0; position: absolute; top:200px}
+    to {opacity: 100; position: absolute; top: 60%; left: 40%;}
+}
+
+@keyframes dropBox2 {
+    from {opacity: 0; position: absolute; top:200px}
+    to {opacity: 100; position: absolute; top: 60%; left:15%;}
+}
+
+@keyframes pfp {
+    from {position: absolute; left:3000px}
+    to {position: absolute; top: 55%; left:75%;}
+}
+
+/*DESKTOP, DO NOT CHANGE*/
+    
+.menu_bar {
+    padding: 0 1%;
+    background-color: var(--color-black);
+    display: flex;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;}
+
+.logo {
+    color: var(--color-white);
+    font-size: 40px;}
+
+.menu_bar ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: XanmonoItalic;}
+
+.menu_bar ul li {
+    position: relative;
+    padding: 10px 30px;}
+
+.menu_bar ul li:hover .drop ul {
+    display: block;
+    margin: 40px;}
+
+.drop ul li {
+    padding: 10px;
+    width: 200px;
+    font-size: 10px;
+    }
+
+.main {
+    font-size: 60px;
+    color: var(--color-black-1);
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: myAnimation;
+    animation-duration: 4s;
+
+.extra {
+    font-size: 30px;
+    }
+}
+
+
+.pfp{
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    animation-name: pfp;
+    animation-duration: 4s;
+    height: 515px;
+    width: 515px;
+    }
+
+.block2 {
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    animation-name: dropBox2;
+    animation-duration: 4s;
+
+.p2 {
+    display: flex;
+    position: absolute;
+    top: 43%;
+    text-align: center;
+    color: var(--color-white);}
+    }
+
+.drop {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+.block1{
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    animation-name: dropBox1;
+    animation-duration: 3s;
+}
+
+.block1 ul {
+    position: absolute;
+    top:25%;
+    left:25%;
+    color: var(--color-white);
+    font-size: 20px;
+    word-spacing: 10%;}
+
+.block1 p {
+    display: flex;
+    position: absolute;
+    top:10%;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.block2 p {
+    display: flex;
+    position: absolute;
+    top:10%;
+    text-align: center;
+    color: var(--color-white);
+}
+
+body {
+    font-family: Xanmono;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.logo a:hover {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.logo span {
+    color: var(--color-main);
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li a:hover {
+    color: var(--color-main);
+    transition: all 0.25s;
+}
+
+.drop ul {
+    display: none;
+}
+
+.menu_bar {
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+
+.background {
+    height: calc(100vh);
+    background-image:linear-gradient(90deg,rgba(189, 145, 255, 0.59) 0%, rgba(0, 255, 115, 0.49) 100%), url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+footer {
+    display: flex;
+    background-color: var(--color-black);
+    padding: 0 20px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+footer p {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+footer a {
+    color: var(--color-white);
+    text-decoration: none;
+}
