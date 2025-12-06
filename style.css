@@ -6,16 +6,16 @@
 
     @font-face {
     font-family: Xanmono;
-    src: url("./fonts/Xanmono-Regular.woff2") format("woff"), url("./fonts/Xanmono-Regular.otf") format("opentype");
+    src: url("Xanmono-Regular.woff2") format("woff"), url("Xanmono-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: XanmonoItalic;
-    src: url("./fonts/Xanmono-Italic.woff2") format("woff"), url("./fonts/Xanmono-Italic.otf") format("opentype");
+    src: url("Xanmono-Italic.woff2") format("woff"), url("Xanmono-Italic.otf") format("opentype");
 }
 
 @media (min-width:756px) {
-    
+
     * {
     margin: 0;
     padding: 0;
