@@ -1,3 +1,32 @@
+:root {
+
+    --color-main: #00FF73;
+
+    --color-white: #ffffff;
+
+    --color-black: #312161;
+
+    --color-black-1: #251849;}
+
+
+
+    @font-face {
+
+    font-family: Xanmono;
+    src: url("Xanmono-Regular.woff2") format("woff"), url("Xanmono-Regular.otf") format("opentype");
+
+}
+
+
+
+@font-face {
+
+    font-family: XanmonoItalic;
+    src: url("Xanmono-Italic.woff2") format("woff"), url("Xanmono-Italic.otf") format("opentype");
+
+}
+
+
 
 * {
     margin: 0;
