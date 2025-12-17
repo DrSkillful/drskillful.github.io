@@ -54,6 +54,11 @@
     to {position: absolute; top: 55%; left:75%;}
 }
 
+@keyframes lang {
+    from {height: 75px; width: 85px;}
+    to{size: 50px;}
+}
+
 /*DESKTOP, DO NOT CHANGE*/
     
 .menu_bar {
@@ -215,6 +220,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;}
+
+.langbt a {
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    right: 16px;
+}
+
+.langbt a:hover {
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    right: 16px;
+    size: 50px;
+    animation-name: lang;
+    animation-duration: 0.1s;
+}
 
 .background {
     height: calc(100vh);
